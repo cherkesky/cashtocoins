@@ -26,10 +26,10 @@ piggyBank = {
 }
 
 
-dollarAmount = 10.17
+dollarAmount = 8.69
 
 piggyBank["quarters"] = dollarAmount // 0.25
-newDollarAmount = dollarAmount - piggyBank["quarters"]*0.25
+newDollarAmount = dollarAmount - piggyBank["quarters"] * 0.25
 
 piggyBank["dimes"] = newDollarAmount // 0.1
 newDollarAmount -= piggyBank["dimes"] * 0.1
@@ -40,7 +40,7 @@ newDollarAmount -= piggyBank["nickels"] * 0.05
 piggyBank["pennies"] = newDollarAmount // 0.01
 newDollarAmount -= piggyBank["pennies"] * 0.01
 roundedAmount = round(newDollarAmount,2)
-piggyBank["pennies"] += roundedAmount * 100
+piggyBank["pennies"] += roundedAmount * 100 
 
 print (f'Dollar Amount: {dollarAmount} Quarters: {piggyBank["quarters"]} Dimes: {piggyBank["dimes"]} Nickels: {piggyBank["nickels"]} Pennies: {piggyBank["pennies"]}')
 
